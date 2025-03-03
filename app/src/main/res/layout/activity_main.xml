@@ -1,50 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/mainxml_background"
+    tools:context=".MainActivity"
+    android:padding="24dp">
 
-    <!-- Üdvözlő szöveg -->
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"/>
-
-    <!-- Regisztráció gomb -->
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/registration"
-        android:backgroundTint="@color/purple_500"
+        android:text="@string/MAINXML_TextView_Welcome"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/welcomeText"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
 
-    <!-- Belépés gomb -->
+    <TextView
+        android:id="@+id/loginInfoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/MAINXML_TextView_Login"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintVertical_bias="0.1" />
+
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:backgroundTint="@color/teal_700"
+        android:padding="12dp"
+        android:text="@string/MAINXML_Login_btn"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/btnRegister"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginInfoText"
+        app:layout_constraintVertical_bias="0.04" />
 
+    <TextView
+        android:id="@+id/registerInfoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/MAINXML_TextView_Register"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.15" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:text="@string/MAINXML_Register_btn"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerInfoText"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mozgoKep"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.8"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
