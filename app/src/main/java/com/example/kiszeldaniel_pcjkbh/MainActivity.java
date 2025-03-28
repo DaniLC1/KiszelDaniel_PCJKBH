@@ -1,8 +1,11 @@
 package com.example.kiszeldaniel_pcjkbh;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
+import android.view.View;
+
 import androidx.viewpager2.widget.ViewPager2;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,11 +46,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-        @Override
-        protected void onDestroy() {
-            super.onDestroy();
-            handler.removeCallbacks(runnable);
-        }
+
+    public void  logIn(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+    public void register(View view){
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handler.removeCallbacks(runnable);
+    }
 
 
 }

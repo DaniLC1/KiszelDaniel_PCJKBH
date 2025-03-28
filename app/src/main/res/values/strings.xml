@@ -6,5 +6,23 @@
     <string name="MAINXML_TextView_Register">Még nem regisztráltál? 2 perc alatt megteheted, kattints a Regisztrálok gombra:</string>
     <string name="MAINXML_Register_btn">Regisztráció</string>
     <string name="MAINXML_Login_btn">Belépés</string>
+    <string name="LOGINXML_EditText_Password">Jelszó</string>
+    <string name="LOGINXML_EditText_Email">E-mail cím</string>
+    <string name="LOGINXML_ETextView_Help">Kérjük, adja meg a bejelentkezéshez szükséges adatait!</string>
+    <string name="LOGINXML_EditText_Title">Bejelentkezés</string>
+    <string name="REGISTRATIONXML_EditText_Title">Regisztráció</string>
+    <string name="REGISTRATIONXML_TextView_Help">Üdvözlünk! Add meg a szükséges adatokat a regisztációhoz!</string>
+    <string name="REGISTRATIONXML_TextView_BasicInfo">Alapadatok</string>
+    <string name="REGISTRATIONXML_EditText_Email">E-mail cím</string>
+    <string name="REGISTRATIONXML_EditText_Password">Jelszó</string>
+    <string name="REGISTRATIONXML_EditText_PasswordAgain">Jelszó megerősítése</string>
+    <string name="REGISTRATIONXML_EditText_FirstName">Keresztnév</string>
+    <string name="REGISTRATIONXML_EditText_SecondName">Vezetéknév</string>
+    <string name="REGISTRATIONXML_EditText_PhoneNumber">Telefonszám</string>
+    <string name="REGISTRATIONXML_TextView_BillingInfo">Számlázási adatok</string>
+    <string name="REGISTRATIONXML_EditText_ZipCode">Irányítószám</string>
+    <string name="REGISTRATIONXML_EditText_City">Város</string>
+    <string name="REGISTRATIONXML_EditText_Address">Utca, házszám</string>
+    <string name="REGISTRATIONXML_CheckBox_ASZF">Elfogadom az ÁSZF-ben leírtakat.</string>
 
 </resources>

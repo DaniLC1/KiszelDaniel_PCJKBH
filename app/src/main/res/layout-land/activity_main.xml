@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/mainxml_background"
     tools:context=".MainActivity"
-    android:padding="24dp">
+    android:padding="20dp">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,11 +47,13 @@
 
             <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="wrap_content"
+                android:backgroundTint="@color/teal_700"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/MAINXML_Login_btn"
                 android:layout_gravity="center_horizontal"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:onClick="logIn"/>
 
             <TextView
                 android:id="@+id/registerInfoText"
@@ -66,11 +68,12 @@
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/MAINXML_Register_btn"
                 android:layout_gravity="center_horizontal"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:onClick="register"/>
 
         </LinearLayout>
     </ScrollView>
