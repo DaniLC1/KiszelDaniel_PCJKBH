@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_500">#a46ede</color>
     <color name="teal_700">#00796B</color>
+    <color name="toolbar_orange">#FFA500</color>
 </resources>

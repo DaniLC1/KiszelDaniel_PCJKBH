@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "651872163068",
+    "project_id": "mobilalkfejl-bb",
+    "storage_bucket": "mobilalkfejl-bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651872163068:android:f570e8d8132ed7e2133379",
+        "android_client_info": {
+          "package_name": "com.example.kiszeldaniel_pcjkbh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651872163068-78tr1tl64vjcg88rqrusuj78qqgm69io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kiszeldaniel_pcjkbh",
+            "certificate_hash": "e7960f41f53bc9ab480a6a66e98c238568b37901"
+          }
+        },
+        {
+          "client_id": "651872163068-ih0jers5ug8j9utf0s46upvppke7cq4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXXT92mkKoVEz9vdD7DihfJUSxyJXsx6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651872163068-ih0jers5ug8j9utf0s46upvppke7cq4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KiszelDaniel_PCJKBH</string>
+    <string name="app_name">BestByte</string>
     <string name="action_settings">Settings</string>
     <string name="MAINXML_TextView_Welcome">Üdvözlünk a BestByte-on!</string>
     <string name="MAINXML_TextView_Login">Már regisztrált felhasználó vagy? Lépj be:</string>
@@ -24,5 +24,11 @@
     <string name="REGISTRATIONXML_EditText_City">Város</string>
     <string name="REGISTRATIONXML_EditText_Address">Utca, házszám</string>
     <string name="REGISTRATIONXML_CheckBox_ASZF">Elfogadom az ÁSZF-ben leírtakat.</string>
+    <string name="MAINXML_Guest_btn">Folytatás vendégként</string>
+    <string name="MAINXML_Google_btn">Folytatás Google fiókkal</string>
+    <string name="INDEXNXML_Under_Development">A webshop fejlesztés alatt áll...</string>
+    <string name="MenuBar_Search">Keresés</string>
+    <string name="MenuBar_Cart">Kosár</string>
+    <string name="MenuBar_LogOut">Kilépés</string>
 
 </resources>

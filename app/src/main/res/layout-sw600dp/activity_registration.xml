@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainxml_background"
+    tools:context=".LoginActivity"
+    android:padding="20dp"
+    android:paddingStart="80dp"
+    android:paddingEnd="80dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/REGISTRATIONXML_EditText_Title"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/registerHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/REGISTRATIONXML_TextView_Help"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/registerTitle"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <TextView
+                android:id="@+id/basicInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/REGISTRATIONXML_TextView_BasicInfo"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/registerHelp"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/basicInfoTitle"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/passwordConfirmInput"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailInput"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <EditText
+                android:id="@+id/passwordConfirmInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_PasswordAgain"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textSize="30sp"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/passwordInput"
+                app:layout_constraintTop_toBottomOf="@id/emailInput"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <EditText
+                android:id="@+id/firstnameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_FirstName"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/lastnameInput"
+                app:layout_constraintTop_toBottomOf="@id/passwordConfirmInput"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <EditText
+                android:id="@+id/lastnameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_SecondName"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/firstnameInput"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordInput"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <EditText
+                android:id="@+id/phoneInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_PhoneNumber"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstnameInput"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <TextView
+                android:id="@+id/billingInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/REGISTRATIONXML_TextView_BillingInfo"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneInput"
+                app:layout_constraintVertical_bias="0.15" />
+
+            <EditText
+                android:id="@+id/zipCodeInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_ZipCode"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cityInput"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/billingInfoTitle"
+                app:layout_constraintVertical_bias="0.1"/>
+
+            <EditText
+                android:id="@+id/cityInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_City"
+                android:inputType="textPostalAddress"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/zipCodeInput"
+                app:layout_constraintTop_toBottomOf="@id/billingInfoTitle"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <EditText
+                android:id="@+id/streetAddressInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/REGISTRATIONXML_EditText_Address"
+                android:inputType="textPostalAddress"
+                android:padding="12dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityInput"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <CheckBox
+                android:id="@+id/termsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/REGISTRATIONXML_CheckBox_ASZF"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/streetAddressInput"
+                app:layout_constraintVertical_bias="0" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="register"
+                android:padding="12dp"
+                android:text="@string/MAINXML_Register_btn"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/termsCheckbox"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/loginInfoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/MAINXML_TextView_Login"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnRegister"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_700"
+                android:layout_margin="20dp"
+                android:onClick="logIn"
+                android:padding="12dp"
+                android:text="@string/MAINXML_Login_btn"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginInfoText"
+                app:layout_constraintVertical_bias="0.1" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
